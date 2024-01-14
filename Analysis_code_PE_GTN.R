@@ -499,12 +499,3 @@ presso_GTN_outlier <- rbind(test1, test6)
 
 write.csv(presso_GTN_outlier, file = "F:\\research\\aging_PE_GTN\\analysis_results\\table\\presso_GTN_outlier.csv",
           quote = FALSE, row.names = FALSE)
-
-remove(list = setdiff(ls(),c("Aging_PE_dat","Aging_GTN_dat")))
-
-
-test1 <- subset(Aging_PE_dat, mr_keep == "TRUE")
-test2 <- subset(Aging_GTN_dat, mr_keep == "TRUE")
-write.csv()
-
-
